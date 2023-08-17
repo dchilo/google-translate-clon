@@ -1,12 +1,12 @@
 import { NextResponse } from 'next/server'
 import { validateTranslation } from '../schemas/translationSchema'
 import { type FromLanguage, type Language } from '../type.d'
-import {translate} from './translate'
+import { translate } from './translate'
 export function GET () {
   return NextResponse.json({ hello: 'world' })
 }
 
-export async function POST (request: any) {
+export default async function POST (request: any) {
   const data = await request.json()
 
   const validated = validateTranslation(data)

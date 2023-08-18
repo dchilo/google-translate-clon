@@ -69,7 +69,7 @@ export async function translate ({
         const data = res
         return data
       })
-      .catch(err => { console.error(err) })
+      .catch(err => { return err.json() })
   }
 
   const result = await fetchingTranslate()

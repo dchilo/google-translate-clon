@@ -26,6 +26,6 @@ export async function POST (request: Request) {
     const result = await translate({ fromLanguage, toLanguage, text })
     return NextResponse.json({ result })
   } catch (error) {
-    return NextResponse.json({ error: 'error' })
+    return NextResponse.json({ error })
   }
 }

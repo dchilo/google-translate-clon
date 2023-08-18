@@ -1,34 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+# Google Translate Clon with NextJS and TS
 
-First, run the development server:
+My first project, it is a Google Translate Clon powered by OpenAI API, made with NextJS, Tailwind and TypeScritp. A little of validations with Zod.
+
+
+## Screenshots
+
+![App Screenshot](https://i.imgur.com/7qgZ7KS.png)
+
+
+## Deployment
+
+To deploy this project run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+  npx next dev
+  # or
+  npm run dev
+  # or
+  yarn dev
+  # or
+  pnpm dev
+```
+Open http://localhost:3000 with your browser to see the result
+
+## API Reference
+
+#### Get all items
+
+```http
+  POST /api/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+| Parameter | Type     | Description                |
+| :-------- | :------- | :------------------------- |
+| `fromLanguage` | `string` | **Required**. The Language code as 'en' |
+| `toLanguage` | `string` | **Required**. The Language code as 'es' |
+| `text` | `string` | **Required**. The text to translate |
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+#### Get item
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
+## Environment Variables
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project, you will need to add the following environment variables to your .env file
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+`OPENAI_API_KEY`
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Authors
+
+- [@dchilo](https://github.com/dchilo)
+
+
+## Feedback
+
+If you have any feedback, please reach out to us at dchilo22@gmail.com

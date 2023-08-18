@@ -1,7 +1,7 @@
 import { SUPPORTED_LANGUAGES } from '../constants'
 import { type FromLanguage, type Language } from '../type.d'
 
-export default async function translate ({
+export async function translate ({
   fromLanguage,
   toLanguage,
   text

@@ -6,7 +6,7 @@ export function GET () {
   return NextResponse.json({ hello: 'world' })
 }
 
-export default async function POST (request: any) {
+export async function POST (request: Request) {
   const data = await request.json()
 
   const validated = validateTranslation(data)

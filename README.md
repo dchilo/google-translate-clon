@@ -1,7 +1,7 @@
 
 # Google Translate Clon with NextJS and TS
 
-My first project, it is a Google Translate Clon powered by OpenAI API, made with NextJS, Tailwind and TypeScritp. A little of validations with Zod.
+My first project, it is a Google Translate Clon powered by OpenAI API, made with NextJS, Tailwind and TypeScript. A little of validations with Zod.
 
 
 ## Screenshots

@@ -21,8 +21,11 @@ export async function POST (request: Request) {
     text: string
   }
 
-  const { fromLanguage, toLanguage, text } = data as Translation
-
-  const result = await translate({ fromLanguage, toLanguage, text })
-  return NextResponse.json({ result })
+  try {
+    const { fromLanguage, toLanguage, text } = data as Translation
+    const result = await translate({ fromLanguage, toLanguage, text })
+    return NextResponse.json({ result })
+  } catch (error) {
+    return NextResponse.json({ error: 'error' })
+  }
 }

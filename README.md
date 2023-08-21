@@ -29,7 +29,7 @@ Open http://localhost:3000 with your browser to see the result
 #### Get all items
 
 ```http
-  POST /api/
+  POST /api
 ```
 
 | Parameter | Type     | Description                |
